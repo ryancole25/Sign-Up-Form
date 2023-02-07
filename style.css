@@ -1,0 +1,95 @@
+:root {
+    --deep-blue-color: #192841;
+    --light-blue-color: #f5fbff;
+}
+
+body {
+    margin: 0px;
+}
+
+.mastercontainer {
+    display: flex;
+}
+
+.large-photo {
+    display: flex;
+    height: 100vh;
+    width: 35vw;
+}
+
+.vintage-weights {
+    width: 35vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 45vw;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 35vw;
+    background-color: #00000099;
+    position: fixed;
+    top: 200px;
+}
+
+.edges {
+    background-color: var(--deep-blue-color);
+    height: 100vh;
+    width: 10vw;
+}
+
+h1 {
+    display: flex;
+    color: white;
+    font-size: 70px;
+}
+
+.iron-corner {
+    width: 150px;
+}
+
+.top {
+    background-color: var(--light-blue-color);
+    flex: 1;
+}
+
+.form {
+    background-color: white;
+    flex: 1;
+}
+
+.bottom {
+    background-color: var(--light-blue-color);
+    flex: 1;
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.github img {
+    height: 30px;
+}
+
+.github p {
+    color: var(--deep-blue-color);
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
