@@ -32,42 +32,45 @@
 
                             <div class="formpair">
                                 <label for="firstname">FIRST NAME</label>
-                                <input type="text" id="firstname" name="firstname">
+                                <input type="text" id="firstname" name="firstname" required>
                             </div>
 
                             <div class="formpair">
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" required>
                             </div>
 
                             <div class="formpair">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password">
+                                <input type="password" id="password" name="password" required>
                             </div>
                             
                         </div>
                         <div class="formcol2">
                             <div class="formpair">
                                 <label for="lastname">LAST NAME</label>
-                                <input type="text" id="lastname" name="lastname">
+                                <input type="text" id="lastname" name="lastname" required>
                             </div>
                             
                             <div class="formpair">
                                 <label for="phonenum">PHONE NUMBER</label>
-                                <input type="tel" id="phonnum" name="phonenum">
+                                <input type="tel" id="phonnum" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required>
                             </div>
                             
                             <div class="formpair">
-                                <label for="password">CONFIRM PASSWORD</label>
-                                <input type="password" id="password" name="password">
+                                <label for="confirmpassword">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirmpassword" name="confirmpassword" required>
                             </div>
                         </div>
                     </div>
-                    <button type="submit">Create Account</button>
+
+                    <div class="account-creation">
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <a href="">Log in</a></p>
+                    </div>
                 </form>
                 </div>
             <div class="bottom">
-                <p>Already have an account? <a href="">Log in</a></p>
                 <div class="github">
                     <p>ryancole25</p>
                     <a href="https://github.com/ryancole25" target="_blank"><img src="github-mark.png" alt=""></a>
@@ -76,6 +79,6 @@
         </div>
         <div class="edges"></div>  
     </div>
-    
+    <script src="javascript.js"></script>
 </body>
 </html>
