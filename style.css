@@ -1,3 +1,8 @@
+@font-face {
+    font-family: anton;
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
+}
+
 :root {
     --deep-blue-color: #192841;
     --light-blue-color: #f5fbff;
@@ -26,6 +31,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 45vw;
+    box-shadow: 5px 10px;
 }
 
 .banner {
@@ -48,7 +54,8 @@ body {
 h1 {
     display: flex;
     color: white;
-    font-size: 70px;
+    font-size: 60px;
+    font-family: anton;
 }
 
 .iron-corner {
@@ -56,9 +63,22 @@ h1 {
 }
 
 .top {
+    display: flex;
+    flex-direction: column;
     background-color: var(--light-blue-color);
     flex: 1;
+    justify-content: flex-end;
 }
+
+.top p {
+    font-size: 26px;
+    font-family: Helvetica;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 200px;
+    color: var(--deep-blue-color);
+}
+
 
 .form {
     background-color: white;
@@ -93,3 +113,75 @@ h1 {
     align-items: center;
     justify-content: flex-end;
 }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.form p {
+    color: var(--deep-blue-color);
+    font-family: Helvetica;
+    font-size: 28px;
+}
+
+.formcol1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formcol2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 70px;
+}
+
+.formpair {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+    border-radius: 4px;
+    border: solid 1px lightgrey;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+}
+
+input:hover {
+    border-color: var(--deep-blue-color);
+}
+
+input:focus {
+    background-color: var(--light-blue-color);
+}
+
+label {
+    color: var(--deep-blue-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+button {
+    position: relative;
+    top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #5388b3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
